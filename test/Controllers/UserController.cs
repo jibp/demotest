@@ -20,6 +20,7 @@ namespace test.Controllers
 
         // GET api/<controller>/5
         [HttpGet("{id}")]
+        [Route("api/User")]
         public string Get(int id)
         {
             var value = id == 1 ? 100 : 200;
